@@ -1,13 +1,14 @@
 <template>
   <section id="section2">
 
-    <page1 v-show="location === 3"></page1>
+    <Page1></Page1>
 
   </section>
 </template>
 
 <script>
-import page1 from './pages/Page1.vue'
+import {elementInViewport} from '../../utils/viewport.js';
+import Page1 from './pages/Page1.vue'
 
   export default {
     data: function () {
@@ -27,12 +28,12 @@ import page1 from './pages/Page1.vue'
 
     },
     components: {
-      page1
+      Page1
     },
     props: []
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

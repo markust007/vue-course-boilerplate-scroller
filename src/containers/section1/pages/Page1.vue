@@ -2,7 +2,8 @@
   <div class="page1 animated fadeIn">
     <div class="container">
       <h3 class="title animated fadeInUp">{{items.s1page1[0].title}}</h3>
-      <p v-html="items.s1page1[0].text" class="animated fadeInUp"></p>
+      <p v-html="items.s1page1[0].text" class="animated fadeInUp" v-show="anim.anim1"></p>
+      <button class="button animated fadeIn" @click="$emit('pageUp')" v-show="anim.anim2">Next Page</button>
     </div>
   </div>
 </template>
@@ -12,10 +13,12 @@
 export default {
   data() {
     return {
-
+      anim: {
+        anim1: false,
+        anim2: false
+      }
     };
   },
-
   computed: {
     location() {
       return this.$store.state.scormLMS.location
@@ -24,7 +27,6 @@ export default {
       return this.$store.state.items
     }
   },
-
   methods: {
     checkCue() {
       //BOILERPLATE FOR RUNNING AN INTERVAL
@@ -40,9 +42,11 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-
-    }, 50);
-
+      this.anim.anim1 = true
+    }, 750);
+    setTimeout(() => {
+      this.anim.anim2 = true
+    }, 1000);
   },
   beforeDestroy() {
     //BOILERPLATE FOR RUNNING AN INTERVAL
@@ -53,6 +57,6 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

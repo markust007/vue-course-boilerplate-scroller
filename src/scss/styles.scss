@@ -5,18 +5,7 @@ Styles
 ============================================================ */
 
 // VARIABLES ====================
-$gray            : rgba(119, 120, 123, 1);
-$gray-light      : rgba(230, 231, 232, 1);
-$gray-dark       : rgba(88, 89, 91, 1);
-$black           : #000000;
-$white           : #ffffff;
-
-$max-width	     : 1010px;
-$section-height  : 660px;
-$header-height   : 50px;
-$footer-height   : 40px;
-
-
+@import "vars";
 // BOURBON
 // @import "bourbon";
 
@@ -37,7 +26,6 @@ $footer-height   : 40px;
 
 // SECTIONS
 @import "_includes/sections/header";
-@import "_includes/sections/footer";
 @import "_includes/sections/section1";
 @import "_includes/sections/section2";
 
@@ -45,19 +33,19 @@ $footer-height   : 40px;
 // COLORS (text, background, border, etc.)
 
 // MEDIA QUERIES
-// 1024 width max
-// @media only screen and (max-width: 1024px) {
+// 640 width plus
+@media only screen and (min-width: 640px) {
+   @import "_includes/mq/640";
+}
+// 768 width plus
+// @media only screen and (min-width: 768px) {
+//    @import "_includes/mq/768";
+// }
+// 1024 width plus
+// @media only screen and (min-width: 1024px) {
 //    @import "_includes/mq/1024";
 // }
-// 768 width max
-// @media only screen and (max-width: 768px) {
-//    @import "_includes/mq/640";
-// }
-// 640 width max
-// @media only screen and (max-width: 640px) {
-//    @import "_includes/mq/640";
-// }
-// 1200 width max
+// 1200 width plus
 // @media only screen and (min-width: 1200px) {
 //    @import "_includes/mq/1200";
 // }

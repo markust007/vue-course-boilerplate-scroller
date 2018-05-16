@@ -13,9 +13,9 @@
 
   <organizations default="evolent">
     <organization identifier="evolent">
-    <title>Vue Boilerplate - Pager</title>
+    <title>Boilerplate - Scroller</title>
       <item identifier="CourseItem01" identifierref="SCO_Resource_01" isvisible="true">
-        <title>Vue Boilerplate - Pager</title>
+        <title>Boilerplate - Scroller</title>
       </item>
     </organization>
   </organizations>

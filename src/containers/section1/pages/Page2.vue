@@ -3,6 +3,7 @@
     <div class="container">
       <h3 class="title animated fadeInUp">{{items.s1page2[0].title}}</h3>
       <p v-html="items.s1page2[0].text" class="animated fadeInUp"></p>
+      <button class="button animated fadeIn" @click="$emit('pageDown')">Prev Page</button>
     </div>
   </div>
 </template>
@@ -15,7 +16,6 @@ export default {
 
     };
   },
-
   computed: {
     location() {
       return this.$store.state.scormLMS.location
@@ -24,7 +24,6 @@ export default {
       return this.$store.state.items
     }
   },
-
   methods: {
     checkCue() {
       //BOILERPLATE FOR RUNNING AN INTERVAL
@@ -50,6 +49,6 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

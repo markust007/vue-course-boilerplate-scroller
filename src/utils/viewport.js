@@ -1,12 +1,11 @@
 export function elementInViewport(el) {
-  //IN VIEW 250PX FROM BOTTOM - change below to num needed
-  var amount = 250;
+  //IN VIEW 250PX FROM BOTTOM
   var rect = el.getBoundingClientRect();
   var html = document.documentElement;
   return (
     rect.top >= 0 &&
     rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight + amount || html.clientHeight + amount) &&
+    rect.bottom <= (window.innerHeight + 250 || html.clientHeight + 250) &&
     rect.right <= (window.innerWidth || html.clientWidth)
   );
   //ALL PARTS IN VIEW

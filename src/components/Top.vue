@@ -20,18 +20,17 @@
     },
     methods: {
       quit() {
-        this.$store.commit('scormLMS/scormScore', 7);
+        this.$store.commit('scormLMS/scormScore', 8);
         this.$store.commit('scormLMS/scormComplete');
       }
     },
     components: {},
     props: ['items']
   }
-
 </script>
 
-<style scoped>
-button {
-  width: 24px;
-}
+<style lang="scss" scoped>
+  button {
+    width: 24px;
+  }
 </style>

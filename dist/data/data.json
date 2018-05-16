@@ -1,7 +1,7 @@
 {
     "header": [
         {
-            "title": "Vue.js Pager Boilerplate",
+            "title": "Vue.js Scroller Boilerplate",
             "button": "Exit",
             "resources": "Line Item One",
             "source": "https://www.google.com/"
@@ -26,13 +26,13 @@
     "s1page1": [
         {
             "title": "Welcome!",
-            "text": "This is the Vue.js Pager Boilerplate. Click next to continue."
+            "text": "This is the Vue.js Scroller Boilerplate. Add more sections to scroll."
         }
     ],
     "s1page2": [
         {
             "title": "Page 2",
-            "text": "This is page 2 of the Vue.js Pager Boilerplate. More pages can be added."
+            "text": "This is page 2 of the Vue.js Scroller Boilerplate. More pages can be added."
         }
     ],
     "s2page1": [

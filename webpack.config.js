@@ -26,7 +26,12 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            'scss': 'vue-style-loader!css-loader!sass-loader',
+            'scss': ['vue-style-loader', 'css-loader', 'sass-loader', {
+              loader: 'sass-resources-loader',
+              options: {
+                resources: path.resolve(__dirname, './src/scss/vars.scss')
+              }
+            }],
             'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
           }
           // other vue-loader options go here

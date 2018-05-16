@@ -6,6 +6,7 @@ header {
   top: 0;
   height: $header-height;
   z-index: 9999;
+  padding: 0 7px 0 7px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,11 +24,9 @@ header {
     flex-grow: 1;
     &.menu {
       text-align: left;
-      padding-left: 10px;
     }
     &.exit {
       text-align: right;
-      padding-right: 10px;
     }
   }
 }

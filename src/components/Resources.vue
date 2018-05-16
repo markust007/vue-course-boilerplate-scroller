@@ -26,9 +26,9 @@
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .resources {
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 0;
     background: rgba(230, 231, 232, 1);

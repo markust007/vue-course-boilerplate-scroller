@@ -19,10 +19,9 @@
     components: {},
     props: []
   }
-
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 button {
   width: 60px;
   height: 30px;

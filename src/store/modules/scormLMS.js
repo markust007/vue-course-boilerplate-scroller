@@ -38,7 +38,7 @@ export const scormLMS = {
           if (globalLocation) {
             state.location = globalLocation
           } else {
-            state.location = 1
+            state.location = 5
           }
         }
          var comma = learnername.indexOf(",");
@@ -99,9 +99,7 @@ export const scormLMS = {
       state.location -= 1;
     },
     incrementProgress (state) {
-      if(state.location === state.progress) {
-        state.progress += 1
-      }
+      state.progress += 1
     }
   }
 }
